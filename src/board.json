@@ -1,0 +1,600 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [],
+      "name": "allMinted",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "ask",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "bAsk",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "bBid",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "batchMint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "bid",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "clear",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId2",
+          "type": "uint256"
+        }
+      ],
+      "name": "deepSwap",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId2",
+          "type": "uint256"
+        }
+      ],
+      "name": "delegateSwap",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllTokensInBoardInMarket",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBoardCover",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBoardId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBoardInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "_width",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "_height",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "_themeId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "string",
+              "name": "_boardName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_boardIntroCID",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "_boardOwner",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_boardAddr",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct Structs.BoardInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBoardIntroCID",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBoardName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBoardOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBoardSize",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCurrentFrameCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTokenCID",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "_width",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "_height",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "_themeId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "string",
+              "name": "_boardName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_boardIntroCID",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "_boardOwner",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_boardAddr",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct Structs.BoardInfo",
+          "name": "boardInfo_",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "boardId_",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "marketPlaceAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenRouterAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "boardImplementationAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "boardContentAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "projectStorageAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "frameCounterFactoryAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "boardMintingFactoryAddr",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "kill",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId2",
+          "type": "uint256"
+        }
+      ],
+      "name": "merge",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "remove",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "removeBoardCover",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "CID",
+          "type": "string"
+        }
+      ],
+      "name": "setBoardCover",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "newBoardName",
+          "type": "string"
+        }
+      ],
+      "name": "setBoardName",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint16",
+          "name": "slotId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "string",
+          "name": "CID",
+          "type": "string"
+        }
+      ],
+      "name": "setSideboardCID",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId2",
+          "type": "uint256"
+        }
+      ],
+      "name": "shallowSwap",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "InX",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint16",
+          "name": "nUnit",
+          "type": "uint16"
+        }
+      ],
+      "name": "split",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "tip",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "CID",
+          "type": "string"
+        }
+      ],
+      "name": "update",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506109d1806100206000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c8063be6fd33011610066578063be6fd3301461011e578063d1c2babb14610131578063da98a7a914610144578063eeb6606814610159578063f745630f1461016c57600080fd5b80630c555701146100a35780631668dbc3146100b95780633b08600e146100db578063598647f8146100f65780636bc8febb1461010b575b600080fd5b6009546040519081526020015b60405180910390f35b6001546040805161ffff620100008404811682529092166020830152016100b0565b6003546040516001600160a01b0390911681526020016100b0565b610109610104366004610874565b61017f565b005b610109610119366004610722565b6101ef565b61010961012c3660046107ee565b6103bb565b61010961013f366004610874565b610430565b61014c610473565b6040516100b091906108e0565b610109610167366004610701565b610507565b61010961017a36600461082f565b610581565b600654604051630742f0a960e41b815260048101849052602481018390523360448201526001600160a01b039091169063742f0a90906064015b600060405180830381600087803b1580156101d357600080fd5b505af11580156101e7573d6000803e3d6000fd5b505050505050565b600054610100900460ff1680610208575060005460ff16155b61026f5760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b606482015260840160405180910390fd5b600054610100900460ff16158015610291576000805461ffff19166101011790555b600680546001600160a01b038088166001600160a01b0319928316179092556007805487841690831617905560088054868416908316179055600580549285169290911691909117905560098990556102ea8a8c610914565b600a805461ffff191661ffff9283161790556040805160a0810182528d8316808252928d1660208083018290529282018c90526001600160a01b038b811660608401528a1660808301526001805463ffffffff1916909417620100009091021783558a51909291610360916002918d01906105b3565b5060608201516002820180546001600160a01b03199081166001600160a01b039384161790915560809093015160039092018054909316911617905580156103ae576000805461ff00191690555b5050505050505050505050565b600854604051630be6fd3360e41b815260048101859052831515602482015261ffff831660448201526001600160a01b039091169063be6fd33090606401600060405180830381600087803b15801561041357600080fd5b505af1158015610427573d6000803e3d6000fd5b50505050505050565b600854600954604051635a2e4bd960e01b8152600481018590526024810184905260448101919091526001600160a01b0390911690635a2e4bd9906064016101b9565b60606001800180546104849061094a565b80601f01602080910402602001604051908101604052809291908181526020018280546104b09061094a565b80156104fd5780601f106104d2576101008083540402835291602001916104fd565b820191906000526020600020905b8154815290600101906020018083116104e057829003601f168201915b5050505050905090565b600854600954600354604051631af5c2fb60e21b8152600481019290925261ffff841660248301526001600160a01b03908116604483015290911690636bd70bec90606401600060405180830381600087803b15801561056657600080fd5b505af115801561057a573d6000803e3d6000fd5b5050505050565b60085460405163f745630f60e01b81526001600160a01b039091169063f745630f906101b990859085906004016108f3565b8280546105bf9061094a565b90600052602060002090601f0160209004810192826105e15760008555610627565b82601f106105fa57805160ff1916838001178555610627565b82800160010185558215610627579182015b8281111561062757825182559160200191906001019061060c565b50610633929150610637565b5090565b5b808211156106335760008155600101610638565b80356001600160a01b038116811461066357600080fd5b919050565b600082601f830112610678578081fd5b813567ffffffffffffffff8082111561069357610693610985565b604051601f8301601f19908116603f011681019082821181831017156106bb576106bb610985565b816040528381528660208588010111156106d3578485fd5b8360208701602083013792830160200193909352509392505050565b803561ffff8116811461066357600080fd5b600060208284031215610712578081fd5b61071b826106ef565b9392505050565b6000806000806000806000806000806101408b8d031215610741578586fd5b61074a8b6106ef565b995061075860208c016106ef565b985060408b0135975060608b013567ffffffffffffffff81111561077a578687fd5b6107868d828e01610668565b97505061079560808c0161064c565b95506107a360a08c0161064c565b94506107b160c08c0161064c565b93506107bf60e08c0161064c565b92506107ce6101008c0161064c565b91506107dd6101208c0161064c565b90509295989b9194979a5092959850565b600080600060608486031215610802578283fd5b8335925060208401358015158114610818578283fd5b9150610826604085016106ef565b90509250925092565b60008060408385031215610841578182fd5b82359150602083013567ffffffffffffffff81111561085e578182fd5b61086a85828601610668565b9150509250929050565b60008060408385031215610886578182fd5b50508035926020909101359150565b60008151808452815b818110156108ba5760208185018101518683018201520161089e565b818111156108cb5782602083870101525b50601f01601f19169290920160200192915050565b60208152600061071b6020830184610895565b82815260406020820152600061090c6040830184610895565b949350505050565b600061ffff8083168185168183048111821515161561094157634e487b7160e01b84526011600452602484fd5b02949350505050565b600181811c9082168061095e57607f821691505b6020821081141561097f57634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052604160045260246000fdfea26469706673582212206a46993c32b6aa0712e6c9c8738e494c894c1c413f19f20079b4f5a8bdfa24ed64736f6c63430008040033"
+}
