@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'IndieFlower';
+    src: url("./IndieFlower.ttf");
+}
+
+@font-face {
+    font-family: 'Inconsolata-B';
+    src: url("./Inconsolata-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Inconsolata-R';
+    src: url("./Inconsolata-Regular.ttf");
+}
